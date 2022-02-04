@@ -7,18 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		741AC03227AC99A200504BC7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741AC03127AC99A200504BC7 /* HomeView.swift */; };
+		741AC03427AC9A6E00504BC7 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741AC03327AC9A6E00504BC7 /* ProjectsView.swift */; };
 		74F8E274276C1E37003ADC8D /* UltimatePortfolioAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F8E273276C1E37003ADC8D /* UltimatePortfolioAppApp.swift */; };
 		74F8E276276C1E37003ADC8D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F8E275276C1E37003ADC8D /* ContentView.swift */; };
 		74F8E278276C1E3A003ADC8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74F8E277276C1E3A003ADC8D /* Assets.xcassets */; };
 		74F8E27B276C1E3A003ADC8D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74F8E27A276C1E3A003ADC8D /* Preview Assets.xcassets */; };
+		74F8E283276C1EFF003ADC8D /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 74F8E281276C1EFF003ADC8D /* Main.xcdatamodeld */; };
+		74F8E285276C2225003ADC8D /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F8E284276C2225003ADC8D /* DataController.swift */; };
+		74F8E28A276C3640003ADC8D /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74F8E289276C3640003ADC8D /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		741AC03127AC99A200504BC7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		741AC03327AC9A6E00504BC7 /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
 		74F8E270276C1E37003ADC8D /* UltimatePortfolioApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UltimatePortfolioApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74F8E273276C1E37003ADC8D /* UltimatePortfolioAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltimatePortfolioAppApp.swift; sourceTree = "<group>"; };
 		74F8E275276C1E37003ADC8D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		74F8E277276C1E3A003ADC8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74F8E27A276C1E3A003ADC8D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		74F8E282276C1EFF003ADC8D /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
+		74F8E284276C2225003ADC8D /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		74F8E286276C35F1003ADC8D /* UltimatePortfolioApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UltimatePortfolioApp.entitlements; sourceTree = "<group>"; };
+		74F8E287276C35FD003ADC8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		74F8E289276C3640003ADC8D /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74F8E28A276C3640003ADC8D /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +50,7 @@
 			children = (
 				74F8E272276C1E37003ADC8D /* UltimatePortfolioApp */,
 				74F8E271276C1E37003ADC8D /* Products */,
+				74F8E288276C3640003ADC8D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,10 +65,16 @@
 		74F8E272276C1E37003ADC8D /* UltimatePortfolioApp */ = {
 			isa = PBXGroup;
 			children = (
+				74F8E287276C35FD003ADC8D /* Info.plist */,
+				74F8E286276C35F1003ADC8D /* UltimatePortfolioApp.entitlements */,
 				74F8E273276C1E37003ADC8D /* UltimatePortfolioAppApp.swift */,
 				74F8E275276C1E37003ADC8D /* ContentView.swift */,
+				741AC03127AC99A200504BC7 /* HomeView.swift */,
+				741AC03327AC9A6E00504BC7 /* ProjectsView.swift */,
 				74F8E277276C1E3A003ADC8D /* Assets.xcassets */,
 				74F8E279276C1E3A003ADC8D /* Preview Content */,
+				74F8E281276C1EFF003ADC8D /* Main.xcdatamodeld */,
+				74F8E284276C2225003ADC8D /* DataController.swift */,
 			);
 			path = UltimatePortfolioApp;
 			sourceTree = "<group>";
@@ -65,6 +85,14 @@
 				74F8E27A276C1E3A003ADC8D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		74F8E288276C3640003ADC8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				74F8E289276C3640003ADC8D /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +165,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				741AC03427AC9A6E00504BC7 /* ProjectsView.swift in Sources */,
+				74F8E283276C1EFF003ADC8D /* Main.xcdatamodeld in Sources */,
+				74F8E285276C2225003ADC8D /* DataController.swift in Sources */,
 				74F8E276276C1E37003ADC8D /* ContentView.swift in Sources */,
+				741AC03227AC99A200504BC7 /* HomeView.swift in Sources */,
 				74F8E274276C1E37003ADC8D /* UltimatePortfolioAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,12 +298,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = UltimatePortfolioApp/UltimatePortfolioApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"UltimatePortfolioApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 4A45YWS7LC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UltimatePortfolioApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -295,12 +329,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = UltimatePortfolioApp/UltimatePortfolioApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"UltimatePortfolioApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 4A45YWS7LC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UltimatePortfolioApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -341,6 +377,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		74F8E281276C1EFF003ADC8D /* Main.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				74F8E282276C1EFF003ADC8D /* Main.xcdatamodel */,
+			);
+			currentVersion = 74F8E282276C1EFF003ADC8D /* Main.xcdatamodel */;
+			path = Main.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 74F8E268276C1E37003ADC8D /* Project object */;
 }
